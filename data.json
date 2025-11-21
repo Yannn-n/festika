@@ -1,26 +1,180 @@
 {
   "prodi": [
-    {"value":"STEI_REKAYASA","label":"STEI Rekayasa","nilai":89.99,"pendukung":["Fisika","Informatika"]},
-    {"value":"FTI_JATINEGARA","label":"FTI Jatinangor","nilai":88.89,"pendukung":["Fisika","Kimia"]},
-    {"value":"FTSL_JATINEGARA","label":"FTSL Jatinangor","nilai":88.05,"pendukung":["Fisika","Matematika"]},
-    {"value":"PISANG","label":"FITB Cirebon","nilai":87.50,"pendukung":["Geografi","Fisika"]},
-    {"value":"SBM","label":"SBM","nilai":93.38,"pendukung":["Ekonomi","Sosiologi"]},
-    {"value":"FSRD_CIREBON","label":"FSRD Cirebon","nilai":87.15,"pendukung":["Seni Budaya","Desain"]},
-    {"value":"SITH_REKAYASA","label":"SITH Rekayasa","nilai":88.43,"pendukung":["Biologi","Kimia"]},
-    {"value":"MTK","label":"Matematika","nilai":89.95,"pendukung":["Matematika Lanjut","Fisika"]},
-    {"value":"IPA","label":"IPA","nilai":88.39,"pendukung":["Biologi","Fisika"]},
-    {"value":"FTSL_GANESHA","label":"FTSL Ganesa","nilai":90.46,"pendukung":["Fisika","Matematika"]},
-    {"value":"SAPPK_CIREBON","label":"SAPPK Cirebon","nilai":87.66,"pendukung":["Seni Budaya","Informatika"]},
-    {"value":"FSRD","label":"FSRD","nilai":91.01,"pendukung":["Seni Budaya","Desain"]},
-    {"value":"SAPPK","label":"SAPPK","nilai":90.93,"pendukung":["Seni Budaya","Informatika"]},
-    {"value":"SF","label":"Farmasi","nilai":90.75,"pendukung":["Kimia","Biologi"]},
-    {"value":"STEI_KOMPUTASI","label":"STEI Komputasi","nilai":93.63,"pendukung":["Matematika","Informatika"]},
-    {"value":"FTTM","label":"FTTM","nilai":93.20,"pendukung":["Fisika","Kimia"]},
-    {"value":"FTTM_CIREBON","label":"FTTM Cirebon","nilai":89.72,"pendukung":["Fisika","Kimia"]},
-    {"value":"FTMD","label":"FTMD","nilai":90.08,"pendukung":["Fisika","Matematika"]},
-    {"value":"FTI_GANESHA","label":"FTI Ganesa","nilai":91.89,"pendukung":["Fisika","Kimia"]},
-    {"value":"FTI_CIREBON","label":"FTI Cirebon","nilai":87.73,"pendukung":["Fisika","Kimia"]},
-    {"value":"FITB","label":"FITB","nilai":90.30,"pendukung":["Geografi","Fisika"]},
-    {"value":"SITH_SAINS","label":"SITH Sains","nilai":87.70,"pendukung":["Biologi","Kimia"]}
+    {
+        "value":"STEI_REKAYASA",
+        "label":"STEI Rekayasa",
+        "nilai":89.99,
+        "pendukung":["Fisika","Matematika","Kimia"],
+        "peminat":545,
+        "dayatampung":102
+    },
+    {
+        "value":"FTI_JATINANGOR"
+        ,"label":"FTI JATINANGOR",
+        "nilai":88.89,
+        "pendukung":["Fisika","Kimia","Biologi","Matematika"],
+        "peminat":477,
+        "dayatampung":60
+    },
+    {
+        "value":"FTSL_JATINANGOR",
+        "label":"FTSL-JATINANGOR",
+        "nilai":88.05,
+        "pendukung":["Fisika","Matematika","Kimia","Biologi"],
+        "peminat":332,
+        "dayatampung":60
+    },
+    {
+        "value":"FTIB-CIREBON",
+        "label":"FITB Cirebon",
+        "nilai":87.50,
+        "pendukung":["Matematika","Fisika","Kimia","Biologi"],
+        "peminat":165,
+        "dayatampung":30
+    },
+    {
+        "value":"SBM",
+        "label":"SBM",
+        "nilai":93.38,
+        "pendukung":["Ekonomi","Matematika"],
+        "peminat":1108,
+        "dayatampung":84
+    },
+    {
+        "value":"FSRD_CIREBON",
+        "label":"FSRD Cirebon",
+        "nilai":87.15,
+        "pendukung":["Seni Budaya","sosiologi"],
+        "peminat":54,
+        "dayatampung":22
+    },
+    {
+        "value":"SITH_REKAYASA",
+        "label":"SITH Rekayasa",
+        "nilai":88.43,
+        "pendukung":["Fisika","Kimia","Matematika"],
+        "peminat":454,
+        "dayatampung":151
+    },
+    {
+        "value":"MTK",
+        "label":"FMIPA-M",
+        "nilai":89.95,
+        "pendukung":["Matematika Lanjut","Fisika"],
+        "peminat":525,
+        "dayatampung":93
+    },
+    {
+        "value":"IPA",
+        "label":"FMIPA-IPA",
+        "nilai":88.39,
+        "pendukung":["Biologi","Fisika","Matematika","Kimia"],
+        "peminat":419,
+        "dayatampung":167
+    },
+    {
+        "value":"FTSL_GANESHA",
+        "label":"FTSL Ganesa",
+        "nilai":90.46,
+        "pendukung":["Fisika","Matematika","Kimia"],
+        "peminat":600,
+        "dayatampung":140
+    },
+    {
+        "value":"SAPPK_CIREBON",
+        "label":"SAPPK Cirebon",
+        "nilai":87.66,
+        "pendukung":["Seni Budaya","Informatika"],
+        "peminat":243,
+        "dayatampung":30
+    },
+    {
+        "value":"FSRD",
+        "label":"FSRD",
+        "nilai":91.01,
+        "pendukung":["Seni Budaya","sejarah"],
+        "peminat":887,
+        "dayatampung":111
+    },
+    {
+        "value":"SAPPK",
+        "label":"SAPPK",
+        "nilai":90.93,
+        "pendukung":["Seni Budaya","Informatika"],
+        "peminat":709,
+        "dayatampung":81
+    },
+    {
+        "value":"SF",
+        "label":"Farmasi",
+        "nilai":90.75,
+        "pendukung":["Kimia","Biologi"],
+        "peminat":670,
+        "dayatampung":67
+    },
+    {
+        "value":"STEI_KOMPUTASI",
+        "label":"STEI Komputasi",
+        "nilai":93.63,
+        "pendukung":["Matematika","Informatika"],
+        "peminat":1487,
+        "dayatampung":112
+    },
+    {
+        "value":"FTTM",
+        "label":"FTTM",
+        "nilai":93.20,
+        "pendukung":["Fisika","Kimia","Kimia"],
+        "peminat":907,
+        "dayatampung":140
+    },
+    {
+        "value":"FTTM_CIREBON",
+        "label":"FTTM Cirebon",
+        "nilai":89.72,
+        "pendukung":["Fisika","Kimia","Kimia"],
+        "peminat":514,
+        "dayatampung":72
+    },
+    {
+        "value":"FTMD",
+        "label":"FTMD",
+        "nilai":90.08,
+        "pendukung":["Fisika","Matematika","Kimia"],
+        "peminat":548,
+        "dayatampung":123
+    },
+    {
+        "value":"FTI_GANESHA",
+        "label":"FTI Ganesa",
+        "nilai":91.89,
+        "pendukung":["Fisika","Kimia"],
+        "peminat":889,
+        "dayatampung":156
+    },
+    {
+        "value":"FTI_CIREBON",
+        "label":"FTI Cirebon",
+        "nilai":87.73,
+        "pendukung":["Fisika","Kimia"],
+        "peminat":331,
+        "dayatampung":30
+    },
+    {
+        "value":"FITB",
+        "label":"FITB",
+        "nilai":90.30,
+        "pendukung":["Geografi","Fisika","Kimia","Matematika"],
+        "peminat":563,
+        "dayatampung":166
+    },
+    {
+        "value":"SITH_SAINS",
+        "label":"SITH Sains",
+        "nilai":87.70,
+        "pendukung":["Biologi","Kimia","Fisika","Matematika"],
+        "peminat":310,
+        "dayatampung":74
+    }
   ]
 }
