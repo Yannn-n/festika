@@ -93,16 +93,45 @@ document.getElementById("btnPilih").addEventListener("click", function () {
 
     let rata = nilai.reduce((a, b) => a + b, 0) / nilai.length;
 
-    let hasil = `
-      <p>Rata-rata nilai kamu: <b>${rata.toFixed(2)}</b></p>
-      <p>Passing grade prodi: <b>${selected.nilai}</b></p>
-    `;
+    let z = (rata - selected.nilai) / (selected.dayatampung / Math.sqrt(selected.peminat));
+    
+    class NormalDistribution {
 
-    if (rata >= selected.nilai) {
-      hasil += `<p class="lulus">KAMU BERPELUANG MASUK 🎉🔥</p>`;
-    } else {
-      hasil += `<p class="gagal">NILAI BELUM MENCUKUPI 😢</p>`;
-    }
+    // Aproksimasi fungsi error (erf)
+      static erf(z) {
+          let t = 1.0 / (1.0 + 0.5 * Math.abs(z));
+
+          let ans = 1 - t * Math.exp(
+              -z * z
+              - 1.26551223
+              + 1.00002368 * t
+              + 0.37409196 * t * t
+              + 0.09678418 * Math.pow(t, 3)
+              - 0.18628806 * Math.pow(t, 4)
+              + 0.27886807 * Math.pow(t, 5)
+              - 1.13520398 * Math.pow(t, 6)
+              + 1.48851587 * Math.pow(t, 7)
+              - 0.82215223 * Math.pow(t, 8)
+              + 0.17087277 * Math.pow(t, 9)
+          );
+
+          return z >= 0 ? ans : -ans;
+      }
+
+      // Fungsi CDF Normal Standar
+      static normalCDF(z) {
+          return 0.5 * (1 + this.erf(z / Math.sqrt(2)));
+      }
+  }
+  let peluangMasuk = NormalDistribution.normalCDF(z) * 100;
+  let hasil;
+  if (peluangMasuk > 10) {
+    hasil = `<p class = "berpeluang">SELAMAT PELUANG MASUK MU : ${peluangMasuk.toFixed(0)}% 🎉🔥 </p>`;
+  } else {
+    hasil = `<p class = "rendah">MAAF PELUANG MASUK MU TERLALU RENDAH 😥😥</p>`;
+  }  
+    
+    
 
     document.getElementById("hasil").innerHTML = hasil;
   });
