@@ -71,7 +71,7 @@ document.getElementById("btnPilih").addEventListener("click", function () {
   });
 
   container.innerHTML += `
-    <button id="hitung">Hitung Rata-rata</button>
+    <button id="hitung">Hitung Peluang Masuk</button>
     <div id="hasil"></div>
   `;
 
