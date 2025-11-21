@@ -149,13 +149,13 @@ body {
 
 
 
-#hasil .lulus {
+#hasil .berpeluang{
   color: #4CAF50;
   font-weight: bold;
   font-size: 1.2rem;
 }
 
-#hasil .gagal {
+#hasil .rendah {
   color: #F44336;
   font-weight: bold;
   font-size: 1.2rem;
