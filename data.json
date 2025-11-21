@@ -10,7 +10,7 @@
     },
     {
         "value":"FTI_JATINANGOR"
-        ,"label":"FTI JATINANGOR",
+        ,"label":"FTI Jatinangor",
         "nilai":88.89,
         "pendukung":["Fisika","Kimia","Biologi","Matematika"],
         "peminat":477,
@@ -18,7 +18,7 @@
     },
     {
         "value":"FTSL_JATINANGOR",
-        "label":"FTSL-JATINANGOR",
+        "label":"FTSL Jatinangor",
         "nilai":88.05,
         "pendukung":["Fisika","Matematika","Kimia","Biologi"],
         "peminat":332,
